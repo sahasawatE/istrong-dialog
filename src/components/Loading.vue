@@ -23,7 +23,13 @@
 </template>
 
 <script>
-import { VCard, VCardText, VProgressLinear } from "vuetify/lib";
+import {
+  VCard,
+  VCardText,
+  VProgressLinear,
+  VProgressCircular,
+  VCardActions,
+} from "vuetify/lib";
 
 export default {
   layout: [
@@ -38,6 +44,8 @@ export default {
     VCard,
     VCardText,
     VProgressLinear,
+    VProgressCircular,
+    VCardActions,
   },
   props: {
     text: String,
