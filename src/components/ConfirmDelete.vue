@@ -35,23 +35,14 @@ import Confirmable from "vuedl/src/mixins/confirmable";
 import Colorable from "../mixins/colorable";
 import Iconable from "../mixins/iconable";
 import DialogActions from "./DialogActions.vue";
-import {
-  VCard,
-  VCardText,
-  VCardTitle,
-  VCardText,
-  VIcon,
-  VRow,
-  VCol,
-} from "vuetify/lib";
+import { VCard, VCardTitle, VCardText, VRow, VCol } from "vuetify/lib";
 export default {
   components: {
     DialogActions,
     VCard,
-    VCardText,
     VCardTitle,
     VCardText,
-    VIcon,
+    VRow,
   },
   layout: ["default", { width: 450 }],
   mixins: [Iconable, Confirmable, Colorable],
