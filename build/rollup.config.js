@@ -12,7 +12,7 @@ const argv = minimist(process.argv.slice(2))
 const config = {
   input: 'src/index.js', // Путь до относительного package.json
   output: {
-    name: 'IstrongVuetifyDialog',
+    name: 'istrongDialog',
     exports: 'named',
     globals: {
       vue: 'Vue',

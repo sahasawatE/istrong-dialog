@@ -18,16 +18,16 @@ Usage:
 const { resolve } = require('path')
 
 module.exports = function nuxtVueWaitModule (moduleOptions) {
-  const options = Object.assign({}, this.options.istrongVuetifyDialog, moduleOptions)
+  const options = Object.assign({}, this.options.istrongDialog, moduleOptions)
 
   if (this.options.build.ssr) {
-    this.options.build.transpile.push(/^istrong-vuetify-dialog/)
+    this.options.build.transpile.push(/^istrong-dialog/)
   }
   // Register plugin
   this.addPlugin({
     ssr: false,
     src: resolve(__dirname, 'plugin.template.js'),
-    fileName: 'istrong-vuetify-dialog.js',
+    fileName: 'istrong-dialog.js',
     options: options
   })
 }

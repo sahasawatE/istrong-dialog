@@ -97,7 +97,8 @@ function install(Vue, options = {}) {
     info: (message, options) => manager.toast({ text: message, color: 'info', ...options }),
     error: (message, options) => manager.toast({ text: message, color: 'error', ...options }),
     success: (message, options) => manager.toast({ text: message, color: 'success', ...options }),
-    warning: (message, options) => manager.toast({ text: message, color: 'warning', ...options })
+    warning: (message, options) => manager.toast({ text: message, color: 'warning', ...options }),
+    test: () => console.log('hok')
   }
 
   manager.component('notification', Alert, {

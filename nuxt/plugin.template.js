@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import VuetifyDialog from 'istrong-vuetify-dialog'
-import 'istrong-vuetify-dialog/dist/vuetify-dialog.css'
+import VuetifyDialog from 'istrong-dialog'
+import 'istrong-dialog/dist/vuetify-dialog.css'
 
 export default (obj, inject) => {
   // aviable only in client side

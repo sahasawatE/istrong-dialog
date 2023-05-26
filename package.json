@@ -1,5 +1,5 @@
 {
-  "name": "istrong-vuetify-dialog",
+  "name": "istrong-dialog",
   "version": "2.0.17",
   "description": "Dialog helper for vuetify.js",
   "scripts": {
@@ -22,7 +22,7 @@
   "types": "types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahasawatE/istrong-vuetify-dialog.git"
+    "url": "git+https://github.com/sahasawatE/istrong-dialog.git"
   },
   "keywords": [
     "vuetify",
