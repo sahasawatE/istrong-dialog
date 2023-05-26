@@ -43,10 +43,12 @@ export default {
     VCardTitle,
     VCardText,
     VRow,
+    VCol,
   },
   layout: ["default", { width: 450 }],
   mixins: [Iconable, Confirmable, Colorable],
   props: {
+    actionOptions: Object,
     image: {
       type: [String, Object],
       required: false,
