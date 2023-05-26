@@ -1,6 +1,7 @@
 import Vuedl from 'vuedl/src/index'
 import DialogLayout from './components/DialogLayout.vue'
 import Confirm from './components/Confirm.vue'
+import ConfirmDelete from './components/ConfirmDelete.vue'
 import Toast from './components/Toast.vue'
 import Alert from './components/Alert.vue'
 import SnackbarLayout from './components/SnackbarLayout.vue'
@@ -77,6 +78,14 @@ function install(Vue, options = {}) {
   manager.component('loading', Loading, {
     waitForResult: false,
     ...options.loading
+  })
+
+  manager.component('delete', ConfirmDelete, {
+    type: 'delete',
+    waitForResult: true,
+    actions: actionsFn,
+    actionOptions: actionOptions,
+    ...options.delete
   })
 
   manager.withLoading = function (options, callback) {
